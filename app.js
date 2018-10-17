@@ -3,7 +3,7 @@ document.addEventListener("keyup",sizeFunc,false)
 function sizeFunc(key){                  
     if (key.keyCode == "107"){                  
             bigFunc();
-            console.log("pressed f")
+            console.log("")
         }
     else if (key.keyCode == "109"){
             smallFunc();
@@ -22,7 +22,7 @@ function bigFunc(){
             document.getElementById("Balloon").style.fontSize = (currentSize + 15) + 'px'
         }
         else {
-            document.getElementById("Balloon").textContent="🎉"
+            document.getElementById("Balloon").textContent=""
             document.removeEventListener("keydown",sizeFunc)
         }
         
